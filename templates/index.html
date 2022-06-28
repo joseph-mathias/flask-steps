@@ -1,0 +1,14 @@
+{% extends "layout.html" %}{% block title %}Home Page{% endblock %} {% block body %}
+<!-- Start Here -->
+<h3>Hello, {{content}}</h3>
+<p>{{description}}</p>
+
+<!-- expressions -->
+{% for x in range(10) %}
+  {% if x % 2 == 1 %}
+    <p>{{x}} - x</p>
+  {% endif %}
+{% endfor %}
+<!-- endHere -->
+
+{% endblock %}

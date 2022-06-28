@@ -1,0 +1,6 @@
+{% extends "layout.html "%}{% block title %}List Page{% endblock %} {% block body%}
+    {% for i in context %}
+        <h3>How are You {{ i }}?</h3>
+        <p>***********************</p>
+    {% endfor %}
+{% endblock %}
