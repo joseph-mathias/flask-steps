@@ -1,9 +1,7 @@
 # flask-steps
-Flask is a web application framework written in Python. It was developed by Armin Ronacher, who led a team of international Python enthusiasts called Poocco. Flask is based on the Werkzeg WSGI toolkit and the Jinja2 template engine.Both are Pocco projects
+Flask is a web application framework written in Python. It was developed by Armin Ronacher, who led a team of international Python enthusiasts called Poocco. Flask is based on the Werkzeg WSGI toolkit and the Jinja2 template engine.Both are Pocco projects A Minimal Application
 
-#A Minimal Application
-
-A minimal Flask application looks something like this:
+##A minimal Flask application looks something like this:
 ```python
 from flask import Flask
 
@@ -13,7 +11,7 @@ app = Flask(__name__)
 def hello_world():
     return "<p>Hello, World!</p>"
 ```
-So what did that code do?
+_So what did that code do?_
 
     First we imported the Flask class. An instance of this class will be our WSGI application.
 
