@@ -1,14 +1,23 @@
 {% extends "layout.html" %}{% block title %}Home Page{% endblock %} {% block body %}
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active justify-content-center">
+        <img class="d-block w-50 rounded" src="{{image}}" alt="First slide">
+      </div>
+  </div>
+</div>
 <!-- Start Here -->
-<h3>Hello, {{content}}</h3>
-<p>{{description}}</p>
+<div class="mt-5">
+  <h3>Hello, {{content}}</h3>
+  <p>{{description}}</p>
 
-<!-- expressions -->
-{% for x in range(10) %}
-  {% if x % 2 == 1 %}
-    <p>{{x}} - x</p>
-  {% endif %}
-{% endfor %}
+  <!-- expressions -->
+  {% for x in range(10) %}
+    {% if x % 2 == 1 %}
+      <p>{{x}} - x</p>
+    {% endif %}
+  {% endfor %}
+</div>
 <!-- endHere -->
 
 {% endblock %}

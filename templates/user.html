@@ -1,0 +1,16 @@
+{% extends "layout.html "%}{% block title %}User Page{% endblock %} {% block body%}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for msg in messages %}
+    <div class="alert alert-danger text-xl-center" role="alert">
+      {{msg}}
+    </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<div class="card">
+    <div class="card-body">
+      <span>User Email: <span style="font-weight: 800;">{{userEmail}}</span></p>
+    </div>
+  </div>
+{% endblock %}

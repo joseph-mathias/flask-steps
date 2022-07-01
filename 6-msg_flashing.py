@@ -1,18 +1,13 @@
-from logging import root
-import os
 from flask import Flask, redirect, render_template, request, flash, url_for, session
 from datetime import timedelta
 
 app = Flask(__name__)
 app.secret_key = "hello"
 app.permanent_session_lifetime = timedelta(minutes=5)
-picture = os.path.join('static', 'img')
-app.config['UPLOAD_FOLDER'] = picture
 
 @app.route('/')
 def index():
-    images = os.path.join(app.config['UPLOAD_FOLDER'], 'img (1).jpg')
-    return render_template("index.html", image=images)
+    return render_template("index.html")
 
 
 @app.route('/login/', methods=['POST', 'GET'])
